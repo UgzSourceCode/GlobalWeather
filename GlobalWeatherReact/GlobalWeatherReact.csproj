@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="weatherclient\src\components\Form.tsx" />
+    <None Remove="weatherclient\src\components\WeatherDetails.tsx" />
     <None Remove="weatherclient\src\Home.tsx" />
     <None Remove="weatherclient\src\router\index.tsx" />
   </ItemGroup>
@@ -15,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="weatherclient\src\components\Form.tsx" />
     <TypeScriptCompile Include="weatherclient\src\components\Home.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\components\WeatherDetails.tsx" />
     <TypeScriptCompile Include="weatherclient\src\router\index.tsx" />
   </ItemGroup>
 
