@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <None Remove="weatherclient\src\Home.tsx" />
+    <None Remove="weatherclient\src\router\index.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="weatherclient\src\Home.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\components\Home.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\router\index.tsx" />
   </ItemGroup>
 
 </Project>
