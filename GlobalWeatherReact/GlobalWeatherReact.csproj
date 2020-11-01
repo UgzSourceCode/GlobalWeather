@@ -5,8 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="weatherclient\src\Home.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="weatherclient\src\Home.tsx" />
   </ItemGroup>
 
 </Project>
