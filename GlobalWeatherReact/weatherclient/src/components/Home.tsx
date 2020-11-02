@@ -32,6 +32,15 @@ class Home extends React.Component {
         }
     }
 
+    async getCity(searchText: string, countryCode: string): Promise<City> {
+        const res = await fetch(`${Constants.locationAPIUrl}/cities/
+                ${countryCode}/search?apikey=${Constants.apiKey}&q=${searchText}`);
+        const cities = await res.json() as City[];
+        if (cities.length > 0)
+            return cities[0];
+        return {} as City;
+    }
+
     async setStateAsync(state: IState) {
         return new Promise((resolve: any) => {
             this.setState(state, resolve);
